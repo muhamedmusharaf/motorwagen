@@ -1,0 +1,40 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-left: 200px;
+    margin-top: 201px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: anim 1s ease-in-out 1s infinite;
+    transition: 1s ease-in-out;
+}
+/* div:hover{
+    /* transform: rotate(30deg); */
+    /* width: 50px;
+    height: 50px; */
+    /* transform: scale(1.5) skew(25deg);
+} */ 
+
+div:hover{
+    animation-play-state: paused;
+}
+@keyframes anim{
+    0%{
+        width: 10px;
+        background-color: black;
+    }
+    50%{
+        width: 70px;
+        background-color: rgb(253, 6, 6);
+    }
+    100%{
+         width: 100px;
+         background-color: rgb(181, 129, 230);
+    }
+}
+.a1{
+    color: blue;
+}
+span{
+    color: black;
+}
